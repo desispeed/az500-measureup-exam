@@ -1,4 +1,4 @@
-use this: {
+{
   "builds": [
     {
       "src": "package.json",
