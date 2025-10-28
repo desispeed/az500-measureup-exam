@@ -1,4 +1,14 @@
-{
-  "buildCommand": "npm run build",
-  "outputDirectory": "build"
-}
+ // vercel.json example for a Vite React app
+    {
+      "build": {
+        "env": {
+          "VITE_PUBLIC_URL": "/"
+        }
+      },
+      "routes": [
+        {
+          "src": "/[^.]+",
+          "dest": "public/index.html"
+        }
+      ]
+    }
