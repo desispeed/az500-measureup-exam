@@ -1,5 +1,5 @@
-json
-{
-  "buildCommand": "npm run build",
-  "outputDirectory": "build"
+use this-> {
+  "rewrites": [
+    { "source": "/(.*)", "destination": "/index.html" }
+  ]
 }
