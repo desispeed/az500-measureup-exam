@@ -3,7 +3,6 @@
   "version": "1.0.0",
   "description": "Azure AZ-500 Security Engineer Associate Practice Exam in MeasureUp Format",
   "private": true,
-  "homepage": "https://github.com/yourusername/az500-measureup-exam",
   "dependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
