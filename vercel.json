@@ -1,14 +1,15 @@
- // vercel.json example for a Vite React app
+use this: {
+  "builds": [
     {
-      "build": {
-        "env": {
-          "VITE_PUBLIC_URL": "/"
-        }
-      },
-      "routes": [
-        {
-          "src": "/[^.]+",
-          "dest": "public/index.html"
-        }
-      ]
+      "src": "package.json",
+      "use": "@vercel/static-build",
+      "config": { "distDir": "build" }
     }
+  ],
+  "rewrites": [
+    {
+      "source": "/(.*)",
+      "destination": "/index.html"
+    }
+  ]
+}
